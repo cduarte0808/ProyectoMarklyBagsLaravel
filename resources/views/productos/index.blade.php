@@ -56,7 +56,8 @@
     @endforeach
 </table>
 <div class="divBoton">
-    <a href="{{ route('productos.create') }}"><button class="button-s3">Nuevo Producto</button></a>
+    <a href="{{ route('productos.create') }}"><button class="button-s3">Nuevo Producto</button></a>&nbsp;&nbsp;
+    <a href="{{ route('dashboard') }}"><img src="{{ asset('assets/images/cerrar-sesion.png') }}" alt="Cerrar Sesión" style="width: 50px; height:55px"></a>
 </div>
 </body>
 
