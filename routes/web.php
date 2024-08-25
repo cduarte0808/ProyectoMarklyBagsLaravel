@@ -25,6 +25,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get("marklybags/home", "App\Http\Controllers\HomeController@home")->name("marklybags.home");
+Route::get("marklybags/bags", "App\Http\Controllers\BagsController@home")->name("marklybags.bags");
+Route::get("marklybags/accesories", "App\Http\Controllers\AccesoriesController@home")->name("marklybags.accesories");
+Route::get("marklybags/blog", "App\Http\Controllers\BlogController@home")->name("marklybags.blog");
+Route::get("marklybags/contacto", "App\Http\Controllers\ContactoController@home")->name("marklybags.contacto");
+
 require __DIR__.'/auth.php';
 
 
