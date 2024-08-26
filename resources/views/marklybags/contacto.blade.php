@@ -11,6 +11,7 @@
 </head>
 
 @include('componentes.header')
+@include('sweetalert::alert')
 
 <body>
     <div class="tituloforms1">
@@ -20,15 +21,16 @@
         
         <div class="formulario2">
 
-            <form action="crearContacto.php" method="POST">
+            <form action="{{ route('contactos.store') }}" method="post">
+            @csrf
                 <label class="labelf" for="nombre">Nombre Completo:</label><br>
-                <input class="input1" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre completo" required><br>
+                <input class="input1" type="text" id="nombre_completo" name="nombre_completo" placeholder="Ingrese Nombre completo" required><br>
 
                 <label class="labelf" for="correo">Correo Electrónico:</label><br>
-                <input class="input1" type="email" id="correo" name="correo" placeholder="Ingrese Correo electrónico" required><br>
+                <input class="input1" type="email" id="correo_electronico" name="correo_electronico" placeholder="Ingrese Correo electrónico" required><br>
 
                 <label class="labelf" for="numero-contacto">Número de Contacto:</label><br>
-                <input class="input1" type="tel" id="numeroContacto" name="numeroContacto" placeholder="Ingrese Número de contacto" required><br>
+                <input class="input1" type="tel" id="numero_contacto" name="numero_contacto" placeholder="Ingrese Número de contacto" required><br>
 
                 <label class="labelf" for="asunto">Asunto:</label><br>
                 <input class="input1" type="text" id="asunto" name="asunto" placeholder="Ingrese Asunto" required><br>

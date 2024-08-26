@@ -38,6 +38,7 @@ Route::get("marklybags/bags", "App\Http\Controllers\BagsController@home")->name(
 Route::get("marklybags/accesories", "App\Http\Controllers\AccesoriesController@home")->name("marklybags.accesories");
 Route::get("marklybags/blog", "App\Http\Controllers\BlogController@home")->name("marklybags.blog");
 Route::get("marklybags/contacto", "App\Http\Controllers\ContactoController@home")->name("marklybags.contacto");
+Route::post("contactos/store", "App\Http\Controllers\ContactoController@store")->name("contactos.store");
 
 require __DIR__.'/auth.php';
 
