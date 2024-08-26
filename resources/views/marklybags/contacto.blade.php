@@ -41,6 +41,9 @@
                 <button class="buttonf" type="submit">Enviar</button>
             </form>
         </div>
+        <div class="divBoton2">
+            <a href="{{ route('marklybags.indexContactos') }}"><button class="button-s3">Ver Lista Contactos</button></a>&nbsp;&nbsp;
+        </div>
 
         <div class="tituloforms">
             <h1 class="negrita-grande">Visita nuestras tiendas. </h1>

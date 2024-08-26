@@ -17,4 +17,9 @@ class Manager
             'mensaje' => $request->mensaje
         ]);
     }
+
+    public function listarRegistros()
+    {
+        return Contactos::all();
+    }
 }

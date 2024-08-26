@@ -22,6 +22,8 @@ Route::middleware('auth')->group(function () {
     Route::get("productos/{id}", "App\Http\Controllers\ProductosController@edit")->name("producto.edit");
     Route::delete("productos/eliminar/{id}", "App\Http\Controllers\ProductosController@delete")->name("producto.delete");
 
+    Route::get("marklybags/indexContactos", "App\Http\Controllers\ContactoController@index")->name("marklybags.indexContactos");
+
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');

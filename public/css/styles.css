@@ -736,3 +736,11 @@ iframe {
     width: 400px;
 }
 
+.divBoton2 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-left: 775px;
+    width:40px;
+}
+

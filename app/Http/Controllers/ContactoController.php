@@ -29,4 +29,10 @@ class ContactoController extends Controller
         }
         
     }
+
+    public function index()
+    {   
+        return view("marklybags.indexContactos") 
+        ->with("contactos", $this->manager->listarRegistros());
+    }
 }
