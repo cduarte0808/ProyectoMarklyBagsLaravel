@@ -7,4 +7,4 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::resource("productos","App\Http\Controllers\ProductosControllerApi");
+Route::resource("productos","App\Http\Controllers\ProductosControllerApi")->middleware('auth:sanctum');

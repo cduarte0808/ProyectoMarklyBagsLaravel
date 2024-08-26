@@ -12,6 +12,12 @@
                     {{ __("Tú estás logueado.. bienvenido a MarklyBags Módulo Administrativo!, aquí puede ver su profile o hacer Log Out!") }}
                     <br> O puede regresar al Módulo Administrativo
                     <a href="{{ route('productos.index') }}"><img src="{{ asset('assets/images/cerrar-sesion.png') }}" alt="Cerrar Sesión" style="width: 50px; height:55px"></a>
+                    <br>
+                    <form action="{{url('tokens/create')}}" method="post">
+                        @csrf
+                        <input type="text" name="token_name" id="" placeholder="Nombre del token">
+                        <input type="submit" value="Generar token">
+                    </form>
                 </div>
             </div>
         </div>
